@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Villa</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/navbar.js" async></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Dream Villa
+      <div class="wname">Real Estate Agency</div>
+    </div>
+    <div class="nav-list-container">
+      <ul class="nav-list">
+        <li class="home"> <a href="index.html"> Home </a> </li>
+        <li> <a href="#"> Property</a></li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Blog</a> </li>
+        <li> <a href="#">Agents</a> </li>
+        <li> <a href="#">Contact</a> </li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn" onclick="toggle()" onblur="remove()"><img src="img/list.png" alt=""></button>
+      <div class="nav-mobile-list-container">
+        <ul class="mobile-nav-list">
+          <li class="home"> <a href="index.html"> Home </a> </li>
+          <li class="property"> <a href="#"> Property</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li class="agent"> <a href="#">Agents</a> </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+    <div class="slider owl-carousel owl-theme">
+        <div class="slide">
+        <img src="img/slide5.png" alt="" >
+        <div class="blackbox"></div>
+        <div class="slider-text-container"> 
+            <h1 class="slide-header"> Your Property Is Our Priority</h1>
+            <div class="slide-text">
+            A small river named Duden flows by their place and supplies it with the 
+             necessary regelialia. It is a paradisematic country, in which roasted parts of 
+             sentences fly into your mouth.
+            </div>
+            <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide6.png" alt="">
+        <div class="blackbox"></div>
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Let Your Home Be Unique & Stylist</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide7.png" alt="">
+        <div class="blackbox"></div>
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Modern House Make Better Life</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut commodi aspernatur consequuntur tenetur voluptas labore at voluptates! Numquam, perferendis. Dolorem deserunt vitae amet optio dolores culpa eveniet facilis totam nisi.</div>
+  <script>
+    $(document).ready(function () { 
+        $('.slider').owlCarousel({
+            items:1,
+            loop:true,
+            dots:false,
+            autoplay:true,
+            autoplayspeed:7000,
+            smartSpeed:1500,
+        });
+     })
+  </script>
+</body>
+</html>

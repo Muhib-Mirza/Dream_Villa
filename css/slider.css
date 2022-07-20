@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.owl-carousel {
+  width: 100vw;
+}
+
+.slider {
+  z-index: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.blackbox {
+  z-index: 2;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  height: 43rem;
+  width: 100vw;
+  opacity: 0.5;
+}
+
+.slider-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 13rem;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+  from {
+    top: 17rem;
+    opacity: 0;
+  }
+  to {
+    top: 13rem;
+    opacity: 1;
+  }
+}
+
+.slide-header {
+  font-weight: bolder;
+  font-size: 3rem;
+  width: 25rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.slide-text {
+  margin-top: 1.3rem;
+  line-height: 28.8px;
+  width: 30rem;
+}
+
+
+.slide-btn{
+  background-color: #5EA51D;
+    width: 8rem;
+    color: white;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    text-align: center;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.4);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width:500px) {
+    .slider img{
+        height: 16rem;
+    }
+    .blackbox{
+        height: 16rem;
+    }
+    .slide-header{
+        font-size: 1.2rem;
+        width: 11rem;
+    }
+    .slider-text-container{
+        top: 4rem;
+    }
+    .slide-text{
+        margin-top: 0.4rem;
+        font-size: x-small;
+        width: 13rem;
+        line-height: 20px;
+    }
+    .slide-btn{
+      width: 4rem;
+      margin-top: 0.5rem;
+      height: 1.5rem;
+      font-size: x-small;
+    }
+    @keyframes slideUp {
+        from{
+            top: 7rem;
+            opacity: 0;
+        }
+        to{
+            top: 4rem;
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:501px) {
+  .slider img{
+    height: 30rem;
+  }
+  .slider-text-container{
+    top: 8rem;
+  }
+  .blackbox{
+    height: 30rem;
+  }
+  @keyframes slideUp {
+    from{
+      top: 12rem;
+      opacity: 0;
+    }
+    to{
+      top: 8rem;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width:1001px) {
+  .blackbox {
+    height: 34.4rem;
+  }
+
+  .slider-text-container {
+    top: 6.5rem;
+  }
+
+  @keyframes slideUp {
+    from{
+        opacity: 0;
+        top: 10rem;
+    }
+    to{
+        opacity: 1;
+        top: 6.5rem;
+    }
+  }
+}
