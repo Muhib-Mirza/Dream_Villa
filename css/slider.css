@@ -13,6 +13,7 @@
 
 body {
   overflow-x: hidden;
+  scroll-behavior:smooth;
 }
 
 .blackbox {
@@ -66,7 +67,7 @@ body {
 
 
 .slide-btn{
-  background-color: #5EA51D;
+    background-color: #5EA51D;
     width: 8rem;
     color: white;
     height: 2rem;

@@ -74,6 +74,8 @@ li > a{
     }
     .mobile-nav-list{
         list-style: none;
+        transform: translateX(-10rem);
+        transition: all 2s ease;
     }
     .mobile-nav-list > li{
         margin-top: 0.8rem;
@@ -133,6 +135,8 @@ li > a{
     }
     .mobile-nav-list{
         list-style: none;
+        transform: translateX(-10rem);
+        transition: all 1.5s ease;
     }
     .mobile-nav-list > li{
         margin-top: 0.8rem;
@@ -186,11 +190,13 @@ li > a{
         background: rgba(0, 0, 0, 0.5);
         z-index: 99;
         margin-top: 1rem;
-        transition: all 1s ease;
+        transition: all 1s ease-out;
         transform: translateX(-11rem);
     }
     .mobile-nav-list{
         list-style: none;
+        transform: translateX(-10rem);
+        transition: all 1.5s ease;
     }
     .mobile-nav-list > li{
         margin-top: 0.8rem;
