@@ -74,7 +74,7 @@
 .house-container:hover{
     background-color: rgba(255, 255, 255, 0.8);
     filter: invert(1);
-    transform: scaleY(1.05);
+    transform: scaleY(1.06);
 }
 
 @media screen and (max-width:700px) and (min-width:601px) {
