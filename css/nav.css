@@ -11,7 +11,7 @@
     color: white;
     font-weight: bold;
     font-family: "Nunito Sans", sans-serif;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-top: 1rem;
     font-size: 1.2rem;
 }
@@ -185,7 +185,7 @@ li > a{
     }
     .nav-mobile-list-container{
         display: block;
-        width: 30%;
+        width: 7rem;
         height: 11.6rem;
         background: rgba(0, 0, 0, 0.5);
         z-index: 99;
@@ -233,5 +233,11 @@ li > a{
         filter: invert(1);
         width: 1.4rem;
         height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:601px) {
+    .nav-list > li{
+        margin-left: 2rem;
     }
 }

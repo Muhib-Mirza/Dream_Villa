@@ -13,7 +13,7 @@
 
 body {
   overflow-x: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth !important;
 }
 
 .blackbox {
@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  animation: slideUp 1s ease;
+  animation: slideUp 1.5s ease;
 }
 
 @keyframes slideUp {
@@ -67,16 +67,22 @@ body {
 
 
 .slide-btn{
-    background-color: #5EA51D;
+    background-color: transparent;
     width: 8rem;
     color: white;
     height: 2rem;
-    border: none;
+    border: 4px solid #00D4FF;
     cursor: pointer;
     margin-top: 1.5rem;
     text-align: center;
     box-shadow: -5px 5px 5px rgba(0,0,0,0.4);
     font-family: "Nunito Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.slide-btn:hover{
+  background-color: #00D4FF;
+  border: none;
 }
 
 @media screen and (max-width:500px) {
@@ -104,6 +110,7 @@ body {
       margin-top: 0.5rem;
       height: 1.5rem;
       font-size: x-small;
+      border: 2px solid #00D4FF;
     }
     @keyframes slideUp {
         from{

@@ -7,12 +7,13 @@
     <title>Dream Villa</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/navbar.js" async></script>
+    <script src="js/change.js" async></script>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/searchbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -50,7 +51,7 @@
   </nav>
     <div class="slider owl-carousel owl-theme">
         <div class="slide">
-        <img src="img/slide5.png" alt="" >
+        <img src="img/slide1.png" alt="" >
         <div class="blackbox"></div>
         <div class="slider-text-container"> 
             <h1 class="slide-header"> Your Property Is Our Priority</h1>
@@ -80,7 +81,7 @@
       </div>
       </div>
       <div class="slide">
-        <img src="img/slide7.png" alt="">
+        <img src="img/slide2.png" alt="">
         <div class="blackbox"></div>
         <div class="slider-text-container"> 
           <h1 class="slide-header"> Modern House Make Better Life</h1>
@@ -94,7 +95,70 @@
             </a>
       </div>
       </div>
+      <div class="slide">
+        <img src="img/slide7.png" alt="">
+        <div class="blackbox"></div>
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Your House Is You Paradise</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
     </div>
+  </div>
+  <div class="searchbar-container" >
+    <div class="search-btn-container">
+      <button class="search-btn buy-btn" onclick="buyChange()">Buy Property</button>
+      <button class="search-btn rent-btn" onblur="defaultColorR()" onclick="changeColorR(),rentChange()">Rent Property</button>
+    </div>
+    <div class="input-container buy-container">
+    <div class="property-container">
+      <div class="property-text">PROPERTY TYPE</div>
+      <Select class="input-p inputs">
+        <option value="Property" >Residential</option>
+        <option value="Property" >Commercial</option>
+        <option value="Property" >Industrial</option>
+      </Select>
+    </div>
+    <div class="property-container">
+      <div class="property-text">Search Location</div>
+      <img src="img/pin.png" alt="" class="location-icon">
+      <input type="text" placeholder="Location" class="input-loc inputs">
+    </div>
+    <div class="property-container">
+      <div class="property-text">PRICE LIMET</div>
+      <input type="text" placeholder="Minimum value 100,000" class="input-p inputs">
+    </div>
+    <button class="property-container searching-btn">Search</button>
+  </div>
+  </div>
+  <div class="searchbar-container">
+    <div class="input-container rent-container">
+    <div class="property-container">
+      <div class="property-text">PROPERTY TYPE</div>
+      <Select class="input-p inputs">
+        <option value="Property" >Residential</option>
+        <option value="Property" >Commercial</option>
+        <option value="Property" >Industrial</option>
+      </Select>
+    </div>
+    <div class="property-container">
+      <div class="property-text">Search Location</div>
+      <img src="img/pin.png" alt="" class="location-icon">
+      <input type="text" placeholder="Location" class="input-loc inputs">
+    </div>
+    <div class="property-container">
+      <div class="property-text">PRICE LIMET</div>
+      <input type="text" placeholder="Minimum value 10,000" class="input-p inputs">
+    </div>
+    <button class="property-container searching-btn">Search</button>
+  </div>
   </div>
   <div class="section-1">
     <div class="smallhead">
@@ -139,6 +203,7 @@
             autoplay:true,
             autoplayspeed:7000,
             smartSpeed:1500,
+            autoplayHoverPause: true,
         });
      })
   </script>
