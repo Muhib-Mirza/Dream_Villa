@@ -256,3 +256,23 @@
     margin-top: 1.2rem;
   } 
 }
+
+@media screen and (max-width:2600px) and (min-width:1700px){
+  .search-btn-container{
+    top: 84rem;
+    left: 70rem;
+  }
+  .input-container{
+    width: 57rem;
+  }
+}
+
+@media screen and (max-width:1699px) and (min-width:1400px){
+  .search-btn-container{
+    top: 46.3rem;
+    left: 34rem;
+  }
+  .input-container{
+    width: 55rem;
+  }
+}

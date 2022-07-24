@@ -166,3 +166,28 @@ body {
     }
   }
 }
+
+@media screen and (max-width:2600px) and (min-width:1700px) {
+  .blackbox{
+    height: 86rem;
+  }
+  .slider-text-container{
+    top: 30rem;
+  }
+  @keyframes slideUp {
+    from{
+      opacity: 0;
+      top: 34rem;
+    }
+    to{
+      opacity: 1;
+      top: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width:1699px) and (min-width:1400px) {
+  .blackbox{
+    height: 49rem;
+  }
+}
