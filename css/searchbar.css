@@ -89,6 +89,10 @@
   display: none;
 }
 
+.input-p{
+  margin-left: 0.7rem;
+}
+
 @media screen and (max-width:1200px) {
   .search-btn-container{
     top: 33rem;
