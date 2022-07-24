@@ -114,8 +114,8 @@
   </div>
   <div class="searchbar-container" >
     <div class="search-btn-container">
-      <button class="search-btn buy-btn" onclick="buyChange()">Buy Property</button>
-      <button class="search-btn rent-btn" onblur="defaultColorR()" onclick="changeColorR(),rentChange()">Rent Property</button>
+      <button class="search-btn buy-btn" onclick="buyChange(), defaultColorR()">Buy Property</button>
+      <button class="search-btn rent-btn" onclick="changeColorR(),rentChange()">Rent Property</button>
     </div>
     <div class="input-container buy-container">
     <div class="property-container">
@@ -142,7 +142,7 @@
     <div class="input-container rent-container">
     <div class="property-container">
       <div class="property-text">PROPERTY TYPE</div>
-      <Select class="input-p inputs">
+      <Select class="input-p inputs" style="padding-left: 1rem;">
         <option value="Property" >Residential</option>
         <option value="Property" >Commercial</option>
         <option value="Property" >Industrial</option>
