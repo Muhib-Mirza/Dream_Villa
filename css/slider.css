@@ -97,13 +97,10 @@ body {
         width: 11rem;
     }
     .slider-text-container{
-        top: 4rem;
+        top: 6.5rem;
     }
     .slide-text{
-        margin-top: 0.4rem;
-        font-size: x-small;
-        width: 13rem;
-        line-height: 20px;
+        display: none;
     }
     .slide-btn{
       width: 4rem;
@@ -114,11 +111,11 @@ body {
     }
     @keyframes slideUp {
         from{
-            top: 7rem;
+            top: 10rem;
             opacity: 0;
         }
         to{
-            top: 4rem;
+            top: 6.5rem;
             opacity: 1;
         }
     }

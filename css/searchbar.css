@@ -90,7 +90,8 @@
 }
 
 .input-p{
-  margin-left: 0.7rem;
+  margin-left: 0rem;
+  background:transparent;
 }
 
 @media screen and (max-width:1200px) {
@@ -122,7 +123,7 @@
     width: 6rem;
    } 
    .input-p{
-    padding-left: 0.3rem;
+    padding-left: 1rem;
     width: 8rem;
    }
 }

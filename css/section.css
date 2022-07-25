@@ -1,6 +1,9 @@
 .section-1{
     text-align: center;
     margin-top: 4rem;
+    transform: translateY(8rem);
+    transition: all 1s ease;
+    opacity: 0;
 }
 
 .smallhead{
@@ -75,6 +78,30 @@
     background-color: rgba(255, 255, 255, 0.8);
     filter: invert(1);
     transform: scaleY(1.06);
+}
+
+.home-container{
+    transition: all 1s ease;
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.land{
+    transition: all 1.2s ease;
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.office{
+    transition: all 1.4s ease;
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.factory{
+    transition: all 1.6s ease;
+    transform: translateY(10rem);
+    opacity: 0;
 }
 
 @media screen and (max-width:700px) and (min-width:601px) {
