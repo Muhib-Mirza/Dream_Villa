@@ -82,25 +82,25 @@
 
 .home-container{
     transition: all 1s ease;
-    transform: translateY(10rem);
+    transform: translateY(4rem);
     opacity: 0;
 }
 
 .land{
     transition: all 1.2s ease;
-    transform: translateY(10rem);
+    transform: translateY(4rem);
     opacity: 0;
 }
 
 .office{
     transition: all 1.4s ease;
-    transform: translateY(10rem);
+    transform: translateY(4rem);
     opacity: 0;
 }
 
 .factory{
     transition: all 1.6s ease;
-    transform: translateY(10rem);
+    transform: translateY(4rem);
     opacity: 0;
 }
 

@@ -48,19 +48,21 @@ function rentChange() {
   document.querySelector(".rent-container").style.display = "flex";
 }
 
+//Section 1 animation
 window.addEventListener("scroll", () => {
   const contain = document.querySelector(".section-1");
-  const z = contain.getBoundingClientRect().y;
+  let z = contain.getBoundingClientRect().y;
   if (z < 550) {
     document.querySelector(".section-1").style.transform = "translateY(0)";
     document.querySelector(".section-1").style.opacity = "1";
   }
 });
 
+//Cards Animation
 window.addEventListener("scroll", () => {
   const contain = document.querySelector(".icon-container");
-  const z = contain.getBoundingClientRect().y;
-  if (z < 350) {
+  let z = contain.getBoundingClientRect().y;
+  if (z < 450) {
     document.querySelector(".home-container").style.opacity = "1";
     document.querySelector(".home-container").style.transform = "translateY(0)";
     document.querySelector(".land").style.opacity = "1";
@@ -69,6 +71,16 @@ window.addEventListener("scroll", () => {
     document.querySelector(".office").style.transform = "translateY(0)";
     document.querySelector(".factory").style.opacity = "1";
     document.querySelector(".factory").style.transform = "translateY(0)";
-
   }
 });
+
+
+//Secction 2 Animation
+window.addEventListener("scroll", () => {
+  const contain = document.querySelector(".section-2");
+  let z = contain.getBoundingClientRect().y;
+  if(z < 600){
+    document.querySelector(".section-2").style.transform = "translateY(0)";
+    document.querySelector(".section-2").style.opacity = "1";
+  }
+})

@@ -1,0 +1,19 @@
+.card-container{
+    width: 90vw;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-1{
+    width: auto;
+}
+
+.container-1{
+    width: 100vw;
+    background-color: #F7F7F7;
+    height: auto;
+    overflow-x: hidden;
+}
