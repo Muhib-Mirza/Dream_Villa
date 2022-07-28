@@ -1,6 +1,6 @@
 .section-2{
     text-align: center;
-    margin-top: 5.5rem;
+    margin-top: 2.5rem;
     transform: translateY(8rem);
     transition: all 1s ease;
     opacity: 0;
@@ -12,6 +12,7 @@
     width: 40rem;
     text-align: center;
     margin: auto;
+    margin-top: 0.2rem;
     font-family: "Nunito Sans", sans-serif;
 }
 

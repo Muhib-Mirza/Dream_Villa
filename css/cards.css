@@ -1,14 +1,23 @@
 .card-container{
     width: 90vw;
     margin: auto;
-    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 27rem;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(12rem);
+    transition: all 1s ease;
+    opacity: 0;
 }
 
 .card-1{
     width: auto;
+    height: 23rem;
+    margin-left: 0.8rem;
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container-1{
@@ -16,4 +25,168 @@
     background-color: #F7F7F7;
     height: auto;
     overflow-x: hidden;
+    margin-top: 3rem;
+}
+
+.card-img{
+    width: 17rem;
+    filter: brightness(0.9);
+}
+
+.card-img:hover{
+    filter: brightness(1);
+}
+
+.card-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1-img{
+    width: 3rem;
+    margin-left: 0.8rem;
+}
+
+.agent-name{
+    color: #666666;
+    line-height: 21px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 1rem;
+}
+
+.up-date{
+    color: #666666;
+    line-height: 21px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 0.8rem;
+}
+
+.rent{
+    background: #FD5C64 !important;
+}
+
+.r-price{
+    margin-left: 3.5rem !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-header{
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.house-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.7rem;
+    margin-top: 0.5rem;
+    font-size: small;
+}
+
+.location-logo{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.c-text{
+    margin-left: 0.4rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.sale{
+    margin-left: 0.7rem;
+    background: #5EA51D;
+    width: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.star-box{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 7rem;
+    text-align: center;
+    height: 1.4rem;
+    margin-left: 1.3rem;
+}
+
+.star-box > img{
+    padding-top: 0.2rem;
+}
+
+.c-footer > a{
+    text-decoration: none;
+}
+
+.buy-btn{
+    cursor: pointer;
+    background-color: #00D4FF;
+    border: none;
+    color: white;
+    width: 5rem;
+    height: 1.2rem;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+}
+
+.price{
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 1.7rem;
+}
+.unit{
+    display: inline-block;
+    font-size: smaller;
+    font-weight: 100;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width:632px) {
+    .card-container{
+        height: 100rem !important;
+    }
+}
+
+@media screen and (min-width:633px) and (max-width:676px) {
+    .card-1{
+        margin-left: 2rem;
+    }
+    .card-container{
+        height: 97rem;
+    }
+}
+
+@media screen and (min-width:676px) and (max-width:950px) {
+    .card-container{
+        height: 50rem;
+    }
+    .card-1{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1100px) {
+    .card-container{
+        width: 64vw !important;
+        height: 50rem;
+        margin-top: 0.5rem
+    }
+    .card-1{
+        margin-left: 2rem;
+    }
 }

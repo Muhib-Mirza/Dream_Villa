@@ -87,19 +87,19 @@
 }
 
 .land{
-    transition: all 1.2s ease;
+    transition: all 1s ease;
     transform: translateY(4rem);
     opacity: 0;
 }
 
 .office{
-    transition: all 1.4s ease;
+    transition: all 1s ease;
     transform: translateY(4rem);
     opacity: 0;
 }
 
 .factory{
-    transition: all 1.6s ease;
+    transition: all 1s ease;
     transform: translateY(4rem);
     opacity: 0;
 }

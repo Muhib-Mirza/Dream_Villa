@@ -11,20 +11,13 @@
   z-index: 1;
 }
 
+.slide > img{
+  filter: brightness(0.4);
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth !important;
-}
-
-.blackbox {
-  z-index: 2;
-  color: white;
-  background-color: black;
-  position: absolute;
-  top: 0;
-  height: 43rem;
-  width: 100vw;
-  opacity: 0.5;
 }
 
 .slider-text-container {
@@ -89,9 +82,6 @@ body {
     .slider img{
         height: 16rem;
     }
-    .blackbox{
-        height: 16rem;
-    }
     .slide-header{
         font-size: 1.2rem;
         width: 11rem;
@@ -128,9 +118,6 @@ body {
   .slider-text-container{
     top: 8rem;
   }
-  .blackbox{
-    height: 30rem;
-  }
   @keyframes slideUp {
     from{
       top: 12rem;
@@ -144,9 +131,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) and (min-width:1001px) {
-  .blackbox {
-    height: 40.2rem;
-  }
 
   .slider-text-container {
     top: 6.5rem;
@@ -165,9 +149,6 @@ body {
 }
 
 @media screen and (max-width:2600px) and (min-width:1700px) {
-  .blackbox{
-    height: 86rem;
-  }
   .slider-text-container{
     top: 30rem;
   }
@@ -180,11 +161,5 @@ body {
       opacity: 1;
       top: 30rem;
     }
-  }
-}
-
-@media screen and (max-width:1699px) and (min-width:1400px) {
-  .blackbox{
-    height: 49rem;
   }
 }

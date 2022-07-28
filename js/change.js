@@ -22,32 +22,6 @@ function remove() {
     "translateX(-11rem)";
 }
 
-function changeColorR() {
-  document.querySelector(".rent-btn").style.background = "#00D4FF";
-  document.querySelector(".rent-btn").style.color = "white";
-  document.querySelector(".buy-btn").style.background = "#F0F0F0";
-  document.querySelector(".buy-btn").style.color = "#AAAAAA";
-}
-
-function defaultColorR() {
-  document.querySelector(".rent-btn").style.background = "#F0F0F0";
-  document.querySelector(".rent-btn").style.color = "#AAAAAA";
-  document.querySelector(".buy-btn").style.background = "#00D4FF";
-  document.querySelector(".buy-btn").style.color = "white";
-}
-
-function buyChange() {
-  console.log("Hello");
-  document.querySelector(".buy-container").style.display = "flex";
-  document.querySelector(".rent-container").style.display = "none";
-}
-
-function rentChange() {
-  console.log("Hello");
-  document.querySelector(".buy-container").style.display = "none";
-  document.querySelector(".rent-container").style.display = "flex";
-}
-
 //Section 1 animation
 window.addEventListener("scroll", () => {
   const contain = document.querySelector(".section-1");
@@ -83,4 +57,14 @@ window.addEventListener("scroll", () => {
     document.querySelector(".section-2").style.transform = "translateY(0)";
     document.querySelector(".section-2").style.opacity = "1";
   }
-})
+});
+
+
+window.addEventListener('scroll', () => {
+  const contain = document.querySelector(".card-container");
+  let z = contain.getBoundingClientRect().y;
+  if(z < 500){
+    document.querySelector(".card-container").style.transform = "translateY(0)";
+    document.querySelector(".card-container").style.opacity = "1";
+  }
+});
