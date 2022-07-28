@@ -63,7 +63,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener('scroll', () => {
   const contain = document.querySelector(".card-container");
   let z = contain.getBoundingClientRect().y;
-  if(z < 500){
+  if(z < 600){
     document.querySelector(".card-container").style.transform = "translateY(0)";
     document.querySelector(".card-container").style.opacity = "1";
   }
