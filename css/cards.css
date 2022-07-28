@@ -7,7 +7,7 @@
     height: 27rem;
     justify-content: center;
     align-items: center;
-    transform: translateY(12rem);
+    transform: translateY(8rem);
     transition: all 1s ease;
     opacity: 0;
 }
