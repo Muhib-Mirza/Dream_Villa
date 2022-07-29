@@ -10,6 +10,7 @@
     transform: translateY(8rem);
     transition: all 1s ease;
     opacity: 0;
+    overflow-y: hidden !important;
 }
 
 .card-1{
@@ -17,7 +18,11 @@
     height: 23rem;
     margin-left: 0.8rem;
     background: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card1-margin{
+    margin-left: 0;
 }
 
 .container-1{
@@ -49,9 +54,24 @@
     align-items: center;
 }
 
+.card-mid{
+    display: flex;
+    flex-direction: row;
+}
+
+.sale{
+    margin-left: 3rem;
+    margin-top: 0.8rem;
+    background: #00D4FF;
+    width: 2.5rem;
+    color: white;
+    text-align: center;
+    height: 1rem;
+}
+
 .c1-img{
     width: 3rem;
-    margin-left: 0.8rem;
+    margin-left: 0rem;
 }
 
 .agent-name{
@@ -73,7 +93,7 @@
 }
 
 .r-price{
-    margin-left: 3.5rem !important;
+    margin-left: 4.5rem !important;
 }
 
 a{
@@ -84,16 +104,16 @@ a{
     font-weight: bold;
     font-family: "Nunito Sans", sans-serif;
     margin-top: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .house-info{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 1.7rem;
+    margin-left: 1rem;
     margin-top: 0.5rem;
-    font-size: small;
+    font-size: medium;
 }
 
 .location-logo{
@@ -106,20 +126,12 @@ a{
     font-family: "Nunito Sans", sans-serif;
 }
 
-.sale{
-    margin-left: 0.7rem;
-    background: #5EA51D;
-    width: 2rem;
-    color: white;
-    text-align: center;
-}
 
 .star-box{
-    background-color: rgba(0, 0, 0, 0.8);
     width: 7rem;
     text-align: center;
-    height: 1.4rem;
-    margin-left: 1.3rem;
+    margin-left: 4.3rem;
+    margin-top: 0.2rem;
 }
 
 .star-box > img{
@@ -131,15 +143,16 @@ a{
 }
 
 .buy-btn{
-    cursor: pointer;
-    background-color: #00D4FF;
-    border: none;
-    color: white;
-    width: 5rem;
-    height: 1.2rem;
-    font-family: "Nunito Sans", sans-serif;
     margin-top: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    width: 5rem;
+    color: black;
+    height: 1.6rem;
+    border: 3.2px solid #00D4FF;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .price{
@@ -147,7 +160,7 @@ a{
     font-size: medium;
     font-weight: bold;
     font-family: "Nunito Sans", sans-serif;
-    margin-left: 1.7rem;
+    margin-left: 2.5rem;
 }
 .unit{
     display: inline-block;
