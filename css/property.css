@@ -136,3 +136,48 @@ body{
         top: 14rem;
     }
 }
+
+
+.property-card-container{
+    margin-top: 4rem !important;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 27rem;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8rem);
+    transition: all 1s ease;
+    opacity: 0;
+    overflow-y: hidden !important;
+    background-color: #e7e4e4;
+    height: auto;
+}
+
+.card-container{
+    height: 50rem !important;
+}
+
+.card-container-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8rem);
+    transition: all 1s ease;
+    opacity: 0;
+    overflow-y: hidden !important;
+}
+
+@media screen and (max-width:350px) {
+    .card-container{
+        height: 194rem ;
+    }
+    .card-1{
+        margin-top: 0.7rem;
+        margin-left: 0;
+    }
+}

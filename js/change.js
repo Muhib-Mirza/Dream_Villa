@@ -68,3 +68,21 @@ window.addEventListener('scroll', () => {
     document.querySelector(".card-container").style.opacity = "1";
   }
 });
+
+window.addEventListener('scroll', () => {
+  const contain = document.querySelector(".property-card-container");
+  let z = contain.getBoundingClientRect().y;
+  if(z < 550){
+    document.querySelector(".property-card-container").style.transform = "translateY(0)";
+    document.querySelector(".property-card-container").style.opacity = "1";
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const contain = document.querySelector(".card-container-2");
+  let z = contain.getBoundingClientRect().y;
+  if(z < 550){
+    document.querySelector(".card-container-2").style.transform = "translateY(0)";
+    document.querySelector(".card-container-2").style.opacity = "1";
+  }
+});
