@@ -62,7 +62,7 @@ body{
 
 @media screen and (max-width:370px) {
     .page-link{
-        top: 4rem;
+        top: 5rem;
         font-size: small;
     }
     .property-h1{
@@ -73,7 +73,7 @@ body{
 
 @media screen and (min-width:370px) and (max-width:420px) {
     .page-link{
-        top: 5rem;
+        top: 6rem;
         font-size: small;
     }
     .property-h1{
@@ -84,7 +84,7 @@ body{
 
 @media screen and (min-width:420px) and (max-width:500px) {
     .page-link{
-        top: 6rem;
+        top: 7rem;
         font-size: small;
     }
     .property-h1{
@@ -95,7 +95,7 @@ body{
 
 @media screen and (min-width:500px) and (max-width:600px) {
     .page-link{
-        top: 7rem;
+        top: 8rem;
         font-size: small;
     }
     .property-h1{
@@ -106,7 +106,7 @@ body{
 
 @media screen and (min-width:600px) and (max-width:700px) {
     .page-link{
-        top: 8.5rem;
+        top: 9rem;
     }
     .property-h1{
         top: 1.5rem;
@@ -171,6 +171,9 @@ body{
     opacity: 0;
     overflow-y: hidden !important;
 }
+.mobile-pic{
+    display: none;
+}
 @media screen and (max-width:632px) {
     .p-1{
         height: 97rem;
@@ -180,6 +183,12 @@ body{
     }
     .p-2{
         height: 97rem;
+    }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
     }
 }
 
