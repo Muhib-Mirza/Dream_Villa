@@ -137,10 +137,28 @@ body{
     }
 }
 
+.card-container{
+    height: 50rem !important;
+}
 
-.property-card-container{
-    margin-top: 4rem !important;
-    width: 100vw;
+.p-2{
+    align-items: flex-start !important;
+    margin-top: 1rem !important;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 27rem;
+    justify-content: center;
+    transform: translate(-0.3rem, 9rem);
+    transition: all 1s ease;
+    opacity: 0;
+    overflow-y: hidden !important;
+}
+
+.p-1{
+    width: 90vw;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -152,32 +170,55 @@ body{
     transition: all 1s ease;
     opacity: 0;
     overflow-y: hidden !important;
-    background-color: #e7e4e4;
-    height: auto;
 }
-
-.card-container{
-    height: 50rem !important;
-}
-
-.card-container-2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(8rem);
-    transition: all 1s ease;
-    opacity: 0;
-    overflow-y: hidden !important;
-}
-
-@media screen and (max-width:350px) {
-    .card-container{
-        height: 194rem ;
+@media screen and (max-width:632px) {
+    .p-1{
+        height: 97rem;
     }
     .card-1{
-        margin-top: 0.7rem;
         margin-left: 0;
+    }
+    .p-2{
+        height: 97rem;
+    }
+}
+
+@media screen and (min-width:633px) and (max-width:676px) {
+    .card-1{
+        margin-left: 2rem;
+    }
+    .p-1{
+        height: 97rem;
+    }
+    .p-2{
+        height: 97rem;
+    }
+}
+
+@media screen and (min-width:676px) and (max-width:950px) {
+    .p-1{
+        height: 50rem;
+    }
+    .p-2{
+        height: 50rem;
+    }
+    .card-1{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1200px) {
+    .p-1{
+        width: 64vw !important;
+        height: 50rem;
+        margin-top: 0.5rem
+    }
+    .p-1{
+        width: 64vw !important;
+        height: 50rem;
+        margin-top: 0.5rem
+    }
+    .card-1{
+        margin-left: 2rem;
     }
 }

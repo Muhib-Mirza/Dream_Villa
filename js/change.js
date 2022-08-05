@@ -70,19 +70,19 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  const contain = document.querySelector(".property-card-container");
+  const contain = document.querySelector(".p-1");
   let z = contain.getBoundingClientRect().y;
-  if(z < 550){
-    document.querySelector(".property-card-container").style.transform = "translateY(0)";
-    document.querySelector(".property-card-container").style.opacity = "1";
+  if(z < 700){
+    document.querySelector(".p-1").style.transform = "translateY(0)";
+    document.querySelector(".p-1").style.opacity = "1";
   }
 });
 
 window.addEventListener('scroll', () => {
-  const contain = document.querySelector(".card-container-2");
+  const contain = document.querySelector(".p-2");
   let z = contain.getBoundingClientRect().y;
   if(z < 550){
-    document.querySelector(".card-container-2").style.transform = "translateY(0)";
-    document.querySelector(".card-container-2").style.opacity = "1";
+    document.querySelector(".p-2").style.transform = "translateY(0)";
+    document.querySelector(".p-2").style.opacity = "1";
   }
 });
