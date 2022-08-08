@@ -70,15 +70,6 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  const contain = document.querySelector(".p-1");
-  let z = contain.getBoundingClientRect().y;
-  if(z < 1000){
-    document.querySelector(".p-1").style.transform = "translateY(0)";
-    document.querySelector(".p-1").style.opacity = "1";
-  }
-});
-
-window.addEventListener('scroll', () => {
   const contain = document.querySelector(".p-2");
   let z = contain.getBoundingClientRect().y;
   if(z < 550){

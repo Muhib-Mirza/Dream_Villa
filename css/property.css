@@ -166,11 +166,21 @@ body{
     height: 27rem;
     justify-content: center;
     align-items: center;
-    transform: translateY(8rem);
-    transition: all 1s ease;
-    opacity: 0;
+    animation: sliding 1s ease;
     overflow-y: hidden !important;
 }
+
+@keyframes sliding {
+    from{
+    transform: translateY(8rem);
+    opacity: 0;
+    }
+    to{
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
 .mobile-pic{
     display: none;
 }
