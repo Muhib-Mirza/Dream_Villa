@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     overflow-x: hidden;
+    background-color: #F7F7F7;
 }
 
 .property-head > img{
@@ -16,6 +16,10 @@ body{
 .property-head{
     width: 100vw;
     height: auto;
+}
+
+.mobile-pic{
+    display: none;
 }
 
 .page-link{
@@ -69,6 +73,12 @@ body{
         top: 1rem;
         font-size: 2.5rem;
     }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
+    }
 }
 
 @media screen and (min-width:370px) and (max-width:420px) {
@@ -79,6 +89,12 @@ body{
     .property-h1{
         top: 1rem;
         font-size: 2.5rem;
+    }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
     }
 }
 
@@ -91,6 +107,12 @@ body{
         top: 1rem;
         font-size: 2.5rem;
     }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
+    }
 }
 
 @media screen and (min-width:500px) and (max-width:600px) {
@@ -101,6 +123,12 @@ body{
     .property-h1{
         top: 1rem;
         font-size: 2.5rem;
+    }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
     }
 }
 
@@ -134,121 +162,5 @@ body{
 @media screen and (min-width:1000px) and (max-width:1100px) {
     .page-link{
         top: 14rem;
-    }
-}
-
-.card-container{
-    height: 50rem !important;
-}
-
-.p-2{
-    align-items: flex-start !important;
-    margin-top: 1rem !important;
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 27rem;
-    justify-content: center;
-    transform: translate(-0.3rem, 5rem);
-    transition: all 1s ease;
-    opacity: 0;
-    overflow-y: hidden !important;
-}
-
-.p-1{
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 27rem;
-    justify-content: center;
-    align-items: center;
-    animation: sliding 1s ease;
-    overflow-y: hidden !important;
-    transform: translateY(7rem);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.mobile-pic{
-    display: none;
-}
-
-@media screen and (max-width:900px) {
-    @keyframes sliding {
-        from{
-        transform: translateY(8rem);
-        opacity: 0;
-        }
-        to{
-        transform: translateY(0);
-        opacity: 1;
-        }
-    }
-    .p-1{
-        transform: translateY(0) !important;
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width:615px) {
-    .p-1{
-        height: 97rem;
-    }
-    .card-1{
-        margin-left: 0;
-    }
-    .p-2{
-        height: 97rem;
-    }
-    .mobile-pic{
-        display: block;
-    }
-    .pc-pic{
-        display: none;
-    }
-
-}
-
-@media screen and (min-width:615px) and (max-width:676px) {
-    .card-1{
-        margin-left: 2rem;
-    }
-    .p-1{
-        height: 97rem;
-    }
-    .p-2{
-        height: 97rem;
-    }
-}
-
-@media screen and (min-width:676px) and (max-width:950px) {
-    .p-1{
-        height: 50rem;
-    }
-    .p-2{
-        height: 50rem;
-    }
-    .card-1{
-        margin-left: 2rem;
-    }
-}
-
-@media screen and (min-width:950px) and (max-width:1200px) {
-    .p-1{
-        width: 64vw !important;
-        height: 50rem;
-        margin-top: 0.5rem
-    }
-    .p-2{
-        width: 64vw !important;
-        height: 50rem;
-        margin-top: 0.5rem
-    }
-    .card-1{
-        margin-left: 2rem;
     }
 }
