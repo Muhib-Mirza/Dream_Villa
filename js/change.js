@@ -26,10 +26,13 @@ function remove() {
 window.addEventListener("scroll", () => {
   const contain = document.querySelector(".section-1");
   let z = contain.getBoundingClientRect().y;
+  if(window.innerHeight > 700)
+  {
   if (z < 550) {
     document.querySelector(".section-1").style.transform = "translateY(0)";
     document.querySelector(".section-1").style.opacity = "1";
   }
+}
 });
 
 //Cards Animation

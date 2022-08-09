@@ -171,13 +171,22 @@ a{
     font-family: "Nunito Sans", sans-serif;
 }
 
-@media screen and (max-width:632px) {
+@media screen and (max-width:555px) {
     .card-container{
         height: 100rem !important;
         width: 100vw;
     }
     .card-1{
         margin-left: 0;
+    }
+}
+
+@media screen and (min-width:555px) and (max-width:600px) {
+    .card-1{
+        margin-left: 2rem;
+    }
+    .card-container{
+        height: 97rem;
     }
 }
 
