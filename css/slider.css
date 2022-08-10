@@ -21,6 +21,14 @@ body {
   scroll-behavior: smooth !important;
 }
 
+nav{
+  display: none;
+}
+
+.hidden-text{
+  display: none;
+}
+
 .slider-text-container {
   display: flex;
   flex-direction: column;

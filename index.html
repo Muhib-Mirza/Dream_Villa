@@ -373,9 +373,15 @@
             autoplayspeed:7000,
             smartSpeed:1500,
             autoplayHoverPause: true,
+            pullDrag:true,
             freeDrag:true,
+            touchDrag: true,
         });
      });
+     $(window).on('load', ()=>{
+      $('nav').fadeIn();
+      $('.hidden-text').fadeIn();
+     })
   </script>
 </body>
 </html>
