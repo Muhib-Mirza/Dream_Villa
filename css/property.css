@@ -5,8 +5,15 @@
 
 body{
     overflow-x: hidden;
-    display: none;
 }
+
+nav{
+    display: none;
+  }
+  
+  .hidden-text{
+    display: none;
+  }
 
 .property-head > img{
     width: 100%;

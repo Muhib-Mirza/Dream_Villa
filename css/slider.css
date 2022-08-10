@@ -19,6 +19,13 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth !important;
+}
+
+nav{
+  display: none;
+}
+
+.hidden-text{
   display: none;
 }
 
