@@ -3,9 +3,8 @@
     margin-top: 4rem;
     transform: translateY(8rem);
     transition: all 1s ease;
-    opacity: 0;
-    animation: upSlide 1s ease;
     display: none;
+    animation: upSlide 1s ease;
 }
 
 .smallhead{
@@ -22,24 +21,14 @@
     font-family: "Nunito Sans", sans-serif;
 }
 
-@media screen and (max-width:500px) {
-    .section-1{
-        transform: translateY(0);
-        opacity: 1;
-    }
-    @keyframes upSlide {
-        from{
-            transform: translateY(8rem);
-            opacity: 0;
-        }
-        to{
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
+section{
+    display: none;
 }
 
 @media screen and (max-width:600px) and (min-width:301px) {
+    .section-1{
+        transform: translateY(0);
+    }
     .section-1 > h1{
         font-size: 2rem;
         width: 20rem;

@@ -5,7 +5,6 @@
 
 .owl-carousel {
   width: 100vw;
-  height: 14rem !important;
 }
 
 .slider {
@@ -25,11 +24,8 @@ nav{
   display: none;
 }
 
-/* section{
-  display: none;
-}
 
-.loader{
+/* .loader{
   width: 100vw;
   height: 100vh;
   overflow: hidden;

@@ -26,18 +26,10 @@ function remove() {
 window.addEventListener("scroll", () => {
   const contain = document.querySelector(".section-1");
   let z = contain.getBoundingClientRect().y;
-  if(window.innerHeight > 600)
-  {
   if (z < 550) {
     document.querySelector(".section-1").style.transform = "translateY(0)";
-    document.querySelector(".section-1").style.opacity = "1";
+    document.querySelector(".section-1").style.display = "block";
   }
-}
-if(window.innerHeight <600 )
-  {
-    document.querySelector(".section-1").style.transform = "translateY(0)";
-    document.querySelector(".section-1").style.opacity = "1";
-}
 });
 
 //Cards Animation
