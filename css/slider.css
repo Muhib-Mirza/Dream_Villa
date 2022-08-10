@@ -21,7 +21,11 @@ body {
   scroll-behavior: smooth !important;
 }
 
-section{
+nav{
+  display: none;
+}
+
+/* section{
   display: none;
 }
 
@@ -52,7 +56,7 @@ section{
   100%{
     transform: rotate(360deg);
   }
-}
+} */
 
 .slider-text-container {
   display: flex;

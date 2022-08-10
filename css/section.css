@@ -5,6 +5,7 @@
     transition: all 1s ease;
     opacity: 0;
     animation: upSlide 1s ease;
+    display: none;
 }
 
 .smallhead{
