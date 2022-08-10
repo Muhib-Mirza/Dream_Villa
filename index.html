@@ -21,6 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="loader">
+    <div></div>
+  </div>
+  <section>
   <nav class="navbar">
     <div class="logo">Dream Villa
       <div class="wname">Real Estate Agency</div>
@@ -363,9 +367,13 @@
 </div>
 </div>
 </div>
+</section>
   <script>
-    $(document).ready(function () { 
-        $('.slider').owlCarousel({
+    // $(document).ready(function () { 
+        
+    //  });
+     $(window).on('load', ()=>{
+      $('.slider').owlCarousel({
             items:1,
             loop:true,
             dots:false,
@@ -377,11 +385,9 @@
             freeDrag:true,
             touchDrag: true,
         });
+      $('.loader').fadeOut(1000);
+      $('section').fadeIn(1000);
      });
-     $(window).on('load', ()=>{
-      $('nav').fadeIn();
-      $('.hidden-text').fadeIn();
-     })
   </script>
 </body>
 </html>
