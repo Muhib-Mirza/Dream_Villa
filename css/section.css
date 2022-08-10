@@ -4,6 +4,7 @@
     transform: translateY(8rem);
     transition: all 1s ease;
     opacity: 0;
+    animation: upSlide 1s ease;
 }
 
 .smallhead{
@@ -18,6 +19,23 @@
     text-align: center;
     margin: auto;
     font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width:500px) {
+    .section-1{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    @keyframes upSlide {
+        from{
+            transform: translateY(8rem);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }
 
 @media screen and (max-width:600px) and (min-width:301px) {

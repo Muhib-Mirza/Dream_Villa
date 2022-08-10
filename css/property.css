@@ -5,6 +5,7 @@
 
 body{
     overflow-x: hidden;
+    display: none;
 }
 
 .property-head > img{
@@ -180,7 +181,7 @@ body{
 @media screen and (max-width:900px) {
     @keyframes sliding {
         from{
-        transform: translateY(8rem);
+        transform: translateY(7rem);
         opacity: 0;
         }
         to{
@@ -189,7 +190,7 @@ body{
         }
     }
     .p-1{
-        transform: translateY(0) !important;
+        transform: translateY(0);
         opacity: 1;
     }
 }

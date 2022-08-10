@@ -5,6 +5,7 @@
 
 .owl-carousel {
   width: 100vw;
+  height: 14rem !important;
 }
 
 .slider {
@@ -18,6 +19,7 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth !important;
+  display: none;
 }
 
 .slider-text-container {
