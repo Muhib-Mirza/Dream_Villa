@@ -20,12 +20,8 @@ body {
   scroll-behavior: smooth !important;
 }
 
-nav{
-  display: none;
-}
 
-
-.loader{
+/* .loader{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -52,7 +48,7 @@ nav{
   100%{
     transform: rotate(360deg);
   }
-}
+} */
 
 .slider-text-container {
   display: flex;
