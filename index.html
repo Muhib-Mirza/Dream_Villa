@@ -16,11 +16,16 @@
     <link rel="stylesheet" href="css/section2.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="loader">
+    <div class="circle"></div>
+</div>
+<article>
   <nav class="navbar">
     <div class="logo">Dream Villa
       <div class="wname">Real Estate Agency</div>
@@ -363,7 +368,8 @@
   Copyright ©2022 All rights reserved by DreamVilla
 </div>
 </div>
-</section>
+</section>  
+</article>
   <script>
      $(window).on('load', ()=>{
       $('.slider').owlCarousel({
@@ -378,6 +384,8 @@
             freeDrag:true,
             touchDrag: true,
         });
+        $('.loader').fadeOut(500);
+        $("article").fadeIn(1000);
      });
   </script>
 </body>
