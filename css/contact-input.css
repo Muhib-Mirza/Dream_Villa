@@ -1,0 +1,141 @@
+body{
+    display: none;
+}
+
+.input-container{
+    width: 85vw;
+    margin: auto;
+    margin-top: 2rem;
+    height: auto;
+    background-color: white;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.text{
+    margin-top: 1rem;
+    color: #B7B3A6;
+}
+
+@media screen and (max-width:435px) {
+    .text{
+        width: 14rem;
+    }
+}
+
+.container2{
+    margin-top: 1rem;
+    font-family: "Nunito Sans", sans-serif !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.address-container{
+    width: 7rem;
+    display: inline-block;
+}
+
+.address{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: small;
+}
+
+.street{
+    margin-top: 0.5rem;
+    color: #B7B3A6;
+}
+
+.link > a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.link{
+    margin-top: 0.5rem;
+}
+
+.phone{
+    margin-left: 3rem;
+    width: 8rem !important;
+}
+
+.contact-input{
+    margin-top: 1rem;
+    width: 24rem;
+    display: inline-block;
+}
+
+.inputs{
+    width: 24rem;
+    outline: none;
+    border: 1px solid #B7B3A6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #B7B3A6;
+    padding-bottom: 0.5rem;
+    font-size: medium;
+    margin-top: 1rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+#message{
+    resize: vertical;
+    min-height: calc(4em + 0.75rem + 2px);
+    max-height: calc(4em + 0.75rem + 2px);
+    font-size: large;
+    margin-top: 0;
+    border-bottom: 1px solid #5EA51D;
+}
+
+.message-btn{
+    background-color: #5EA51D;
+    border: none;
+    color: white;
+    width: 6.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .address-container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .phone{
+        margin-left: 0;
+    }
+    .inputs{
+        width: 15rem;
+    }
+}
+
+.follow-section{
+    font-family: "Nunito Sans", Arial, sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.follow-link{
+    margin-top: 1rem;
+}
+
+.follow-link > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: smaller;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}

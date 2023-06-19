@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: none;
+  }
+  
+  .hidden-text{
+    display: none;
+  }
+
+.property-head > img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+.property-head{
+    width: 100vw;
+    height: auto;
+}
+
+.page-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    top: 15rem;
+    color: whitesmoke !important;
+    font-size: large;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.page-link > a{
+    text-decoration: none;
+    width: auto;
+    color: whitesmoke;
+    transition: all 1s ease;
+}
+
+.page-link > a:hover{
+    color: #5EA51D;
+}
+
+.no-link{
+    width: auto;
+    margin-left: 0.5rem;
+}
+
+.right-arrow{
+    height: 0.8rem;
+    filter: invert(1);
+}
+
+.property-h1{
+    position: absolute;
+    top: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width:370px) {
+    .page-link{
+        top: 5rem;
+        font-size: small;
+    }
+    .property-h1{
+        top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:370px) and (max-width:420px) {
+    .page-link{
+        top: 6rem;
+        font-size: small;
+    }
+    .property-h1{
+        top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:420px) and (max-width:500px) {
+    .page-link{
+        top: 7rem;
+        font-size: small;
+    }
+    .property-h1{
+        top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    .page-link{
+        top: 8rem;
+        font-size: small;
+    }
+    .property-h1{
+        top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:700px) {
+    .page-link{
+        top: 9rem;
+    }
+    .property-h1{
+        top: 1.5rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:800px) {
+    .page-link{
+        top: 9rem;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:900px) {
+    .page-link{
+        top: 10.5rem;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1000px) {
+    .page-link{
+        top: 12.3rem;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1100px) {
+    .page-link{
+        top: 14rem;
+    }
+}
+
+.card-container{
+    height: 50rem !important;
+}
+
+.p-2{
+    align-items: flex-start !important;
+    margin-top: 1rem !important;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 27rem;
+    justify-content: center;
+    transform: translate(-0.3rem, 5rem);
+    transition: all 1s ease;
+    opacity: 0;
+    overflow-y: hidden !important;
+}
+
+.p-1{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 27rem;
+    justify-content: center;
+    align-items: center;
+    animation: sliding 1s ease;
+    overflow-y: hidden !important;
+    transform: translateY(7rem);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.mobile-pic{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    @keyframes sliding {
+        from{
+        transform: translateY(7rem);
+        opacity: 0;
+        }
+        to{
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    .p-1{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .p-1{
+        height: 97rem;
+    }
+    .card-1{
+        margin-left: 0;
+    }
+    .p-2{
+        height: 97rem;
+    }
+    .mobile-pic{
+        display: block;
+    }
+    .pc-pic{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:615px) and (max-width:676px) {
+    .card-1{
+        margin-left: 2rem;
+    }
+    .p-1{
+        height: 97rem;
+    }
+    .p-2{
+        height: 97rem;
+    }
+}
+
+@media screen and (min-width:676px) and (max-width:950px) {
+    .p-1{
+        height: 50rem;
+    }
+    .p-2{
+        height: 50rem;
+    }
+    .card-1{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1200px) {
+    .p-1{
+        width: 64vw !important;
+        height: 50rem;
+        margin-top: 0.5rem
+    }
+    .p-2{
+        width: 64vw !important;
+        height: 50rem;
+        margin-top: 0.5rem
+    }
+    .card-1{
+        margin-left: 2rem;
+    }
+}

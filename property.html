@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Villa</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/property.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="js/change.js"></script>
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Dream Villa
+        <div class="wname">Real Estate Agency</div>
+      </div>
+      <div class="nav-list-container">
+        <ul class="nav-list">
+          <li class="home"> <a href="index.html"> Home </a> </li>
+          <li> <a href="property.html"> Property</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Agents</a> </li>
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn" onclick="toggle()" onblur="remove()"><img
+            src="img/list.png" alt=""></button>
+        <div class="nav-mobile-list-container">
+          <ul class="mobile-nav-list">
+            <li class="home"> <a href="index.html"> Home </a> </li>
+            <li class="property"> <a href="property.html"> Property</a></li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Blog</a> </li>
+            <li class="agent"> <a href="#">Agents</a> </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="property-head">
+      <img src="img/propertyfront.jpg" alt="" class="pc-pic">
+      <img src="img/p-mobile.jpg" alt="" class="mobile-pic">
+      
+      <div class="page-link">
+        <a href="index.html">  Home </a> <img src="img/chevron-right.svg" alt=""
+            class="right-arrow">
+        <div class="no-link"> Properties <img src="img/chevron-right.svg" alt=""
+            class="right-arrow"></div>
+            <div class="property-h1">
+              Properties
+            </div>
+      </div>
+   </div>
+   <div class="hidden-text">
+    <div class="container-1">
+      <div class="p-1">
+        <div class="card-1 c1 card1-margin">
+          <a href="#">
+          <img src="img/card1.webp" alt="" class="card-img" >
+        </a>
+          <div class="card-text-container">
+            <div class="card-header">
+            <img src="img/card1-img.png" alt="" class="c1-img">
+            <div class="agent-name">
+              Ali Hassan
+            </div>
+            <div class="up-date">
+              2 weeks ago
+            </div>
+          </div>
+          <div class="card-mid">
+          <div class="text-header">
+            Dream Villa Property
+          </div>
+          <div class="sale">
+            Sale
+          </div>
+        </div>
+            <div class="house-info">
+            <img src="img/locate.svg" alt="" class="location-logo">
+            <div class="c-text">
+              Lahore
+            </div>
+            <div class="star-box">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/greystar.svg" alt="" >
+            </div>
+            </div>
+            <div class="c-footer">
+              <a href="#">
+                <button class="buy-btn">Buy Now</button>
+              </a>
+              <div class="price">
+                10,000,000
+                <div class="unit">
+                  PKR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-1 c1">
+          <a href="#">
+          <img src="img/card2.webp" alt="" class="card-img" >
+        </a>
+          <div class="card-text-container">
+            <div class="card-header">
+            <img src="img/muhib-small-img.png" alt="" class="c1-img">
+            <div class="agent-name">
+              Muhib Mirza
+            </div>
+            <div class="up-date">
+              2 weeks ago
+            </div>
+          </div>
+          <div class="card-mid">
+            <div class="text-header">
+              Dream Villa Property
+            </div>
+            <div class="sale rent">
+              Rent
+            </div>
+          </div>
+            <div class="house-info">
+            <img src="img/locate.svg" alt="" class="location-logo">
+            <div class="c-text">
+              Lahore
+            </div>
+            <div class="star-box">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/greystar.svg" alt="">
+              <img src="img/greystar.svg" alt="">
+            </div>
+            </div>
+            <div class="c-footer">
+              <a href="#">
+                <button class="buy-btn">Buy Now</button>
+              </a>
+              <div class="price r-price">
+                50,000
+                <div class="unit">
+                  PKR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-1 c1">
+          <a href="#">
+          <img src="img/card3.webp" alt="" class="card-img" >
+        </a>
+          <div class="card-text-container">
+            <div class="card-header">
+            <img src="img/muhib-small-img.png" alt="" class="c1-img">
+            <div class="agent-name">
+              Muhib Mirza
+            </div>
+            <div class="up-date">
+              2 weeks ago
+            </div>
+          </div>
+          <div class="card-mid">
+            <div class="text-header">
+              Dream Villa Property
+            </div>
+            <div class="sale">
+              Sale
+            </div>
+          </div>
+            <div class="house-info">
+            <img src="img/locate.svg" alt="" class="location-logo">
+            <div class="c-text">
+              Lahore
+            </div>
+            <div class="star-box">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+            </div>
+            </div>
+            <div class="c-footer">
+              <a href="#">
+                <button class="buy-btn">Buy Now</button>
+              </a>
+              <div class="price">
+                20,000,000
+                <div class="unit">
+                  PKR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-1 c1">
+          <a href="#">
+          <img src="img/card4.webp" alt="" class="card-img" >
+        </a>
+          <div class="card-text-container">
+            <div class="card-header">
+            <img src="img/card1-img.png" alt="" class="c1-img">
+            <div class="agent-name">
+              Ali Hassan
+            </div>
+            <div class="up-date">
+              2 weeks ago
+            </div>
+          </div>
+          <div class="card-mid">
+            <div class="text-header">
+              Dream Villa Property
+            </div>
+            <div class="sale rent">
+              Rent
+            </div>
+          </div>
+            <div class="house-info">
+            <img src="img/locate.svg" alt="" class="location-logo">
+            <div class="c-text">
+              Lahore
+            </div>
+            <div class="star-box">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/greystar.svg" alt="">
+            </div>
+            </div>
+            <div class="c-footer">
+              <a href="#">
+                <button class="buy-btn">Buy Now</button>
+              </a>
+              <div class="price r-price">
+                70,000,
+                <div class="unit">
+                  PKR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="p-2">
+          <div class="card-1 c1 card1-margin">
+            <a href="#">
+            <img src="img/card1.webp" alt="" class="card-img" >
+          </a>
+            <div class="card-text-container">
+              <div class="card-header">
+              <img src="img/card1-img.png" alt="" class="c1-img">
+              <div class="agent-name">
+                Ali Hassan
+              </div>
+              <div class="up-date">
+                2 weeks ago
+              </div>
+            </div>
+            <div class="card-mid">
+            <div class="text-header">
+              Dream Villa Property
+            </div>
+            <div class="sale">
+              Sale
+            </div>
+          </div>
+              <div class="house-info">
+              <img src="img/locate.svg" alt="" class="location-logo">
+              <div class="c-text">
+                Lahore
+              </div>
+              <div class="star-box">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/greystar.svg" alt="" >
+              </div>
+              </div>
+              <div class="c-footer">
+                <a href="#">
+                  <button class="buy-btn">Buy Now</button>
+                </a>
+                <div class="price">
+                  10,000,000
+                  <div class="unit">
+                    PKR
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 c1">
+            <a href="#">
+            <img src="img/card2.webp" alt="" class="card-img" >
+          </a>
+            <div class="card-text-container">
+              <div class="card-header">
+              <img src="img/muhib-small-img.png" alt="" class="c1-img">
+              <div class="agent-name">
+                Muhib Mirza
+              </div>
+              <div class="up-date">
+                2 weeks ago
+              </div>
+            </div>
+            <div class="card-mid">
+              <div class="text-header">
+                Dream Villa Property
+              </div>
+              <div class="sale rent">
+                Rent
+              </div>
+            </div>
+              <div class="house-info">
+              <img src="img/locate.svg" alt="" class="location-logo">
+              <div class="c-text">
+                Lahore
+              </div>
+              <div class="star-box">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/greystar.svg" alt="">
+                <img src="img/greystar.svg" alt="">
+              </div>
+              </div>
+              <div class="c-footer">
+                <a href="#">
+                  <button class="buy-btn">Buy Now</button>
+                </a>
+                <div class="price r-price">
+                  50,000
+                  <div class="unit">
+                    PKR
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 c1">
+            <a href="#">
+            <img src="img/card3.webp" alt="" class="card-img" >
+          </a>
+            <div class="card-text-container">
+              <div class="card-header">
+              <img src="img/muhib-small-img.png" alt="" class="c1-img">
+              <div class="agent-name">
+                Muhib Mirza
+              </div>
+              <div class="up-date">
+                2 weeks ago
+              </div>
+            </div>
+            <div class="card-mid">
+              <div class="text-header">
+                Dream Villa Property
+              </div>
+              <div class="sale">
+                Sale
+              </div>
+            </div>
+              <div class="house-info">
+              <img src="img/locate.svg" alt="" class="location-logo">
+              <div class="c-text">
+                Lahore
+              </div>
+              <div class="star-box">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+              </div>
+              <div class="c-footer">
+                <a href="#">
+                  <button class="buy-btn">Buy Now</button>
+                </a>
+                <div class="price">
+                  20,000,000
+                  <div class="unit">
+                    PKR
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 c1">
+            <a href="#">
+            <img src="img/card4.webp" alt="" class="card-img" >
+          </a>
+            <div class="card-text-container">
+              <div class="card-header">
+              <img src="img/card1-img.png" alt="" class="c1-img">
+              <div class="agent-name">
+                Ali Hassan
+              </div>
+              <div class="up-date">
+                2 weeks ago
+              </div>
+            </div>
+            <div class="card-mid">
+              <div class="text-header">
+                Dream Villa Property
+              </div>
+              <div class="sale rent">
+                Rent
+              </div>
+            </div>
+              <div class="house-info">
+              <img src="img/locate.svg" alt="" class="location-logo">
+              <div class="c-text">
+                Lahore
+              </div>
+              <div class="star-box">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/greystar.svg" alt="">
+              </div>
+              </div>
+              <div class="c-footer">
+                <a href="#">
+                  <button class="buy-btn">Buy Now</button>
+                </a>
+                <div class="price r-price">
+                  70,000,
+                  <div class="unit">
+                    PKR
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="footer">
+          <div class="foot-icon-container">
+            <img src="img/facebook.svg" alt=""  class="foot-icon">
+            <img src="img/twitter.svg" alt=""  class="foot-icon">
+            <img src="img/insta.svg" alt=""  class="foot-icon">
+          </div>
+        <div class="foot-head cmp-name">
+          DreamVilla
+          <div class="small-text">
+              Real Estate Agency
+          </div>
+        </div>
+        <div class="foot-end">
+          Copyright ©2022 All rights reserved by DreamVilla
+        </div>
+        </div>
+      </div>
+        <script>
+          $(document).ready(()=>{
+            $('nav').fadeIn(300);
+            $('.hidden-text').fadeIn();
+          })
+        </script>
+  </body>
+</html>

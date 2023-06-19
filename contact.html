@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Villa</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact-head.css">
+    <link rel="stylesheet" href="css/contact-input.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="js/change.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Dream Villa
+        <div class="wname">Real Estate Agency</div>
+      </div>
+      <div class="nav-list-container">
+        <ul class="nav-list">
+          <li class="home"> <a href="index.html"> Home </a> </li>
+          <li> <a href="property.html"> Property</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Agents</a> </li>
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn" onclick="toggle()" onblur="remove()"><img
+            src="img/list.png" alt=""></button>
+        <div class="nav-mobile-list-container">
+          <ul class="mobile-nav-list">
+            <li class="home"> <a href="index.html"> Home </a> </li>
+            <li class="property"> <a href="property.html"> Property</a></li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Blog</a> </li>
+            <li class="agent"> <a href="#">Agents</a> </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="property-head">
+      <img src="img/propertyfront.jpg" alt="" class="pc-pic">
+      <img src="img/p-mobile.jpg" alt="" class="mobile-pic">
+      <div class="page-link">
+        <a href="./index.html">Home <img src="img/chevron-right.svg" alt=""
+            class="right-arrow"></a>
+        <div class="no-link"> Contact <img src="img/chevron-right.svg" alt=""
+            class="right-arrow"></div>
+        <div class="property-h1">
+          Contact
+        </div>
+      </div>
+    </div>
+    <div class="input-container">
+      <div class="section-container">
+      <h1 class="input-header">Contact us</h1>
+      <div class="text">
+        We're open for any suggestion or just to have a chat
+      </div>
+      <div class="container2">
+        <div class="address-container">
+          <div class="address">Address:</div>
+          <div class="street">12-AS Mall Road, Lahore</div>
+        </div>
+        <div class="address-container">
+          <div class="address">Email:</div>
+          <div class="link">
+            <a href="mailto:dreamvilla@gmail.com">dreamvilla@gmail.com</a>
+          </div>
+        </div>
+        <div class="address-container phone">
+          <div class="address">Phone:</div>
+          <div class="link">
+            <a href="tel:+923030303030">+9230 3030 3030</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-input">
+        <input type="text" placeholder="Name" class="inputs">
+        <input type="text" placeholder="Email" class="inputs">
+        <input type="text" placeholder="Subject" class="inputs">
+        <textarea placeholder="Create a message here" class="inputs"
+          name="message" id="message" cols="30" rows="4"></textarea>
+          <button class="message-btn">Send message</button>
+      </div>
+      <div class="follow-section">
+        <div class="follow-us">
+          Follow us here
+        </div>
+        <div class="follow-link">
+          <a href="#" style="margin-left: 0;">FaceBook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">OLX</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot-icon-container">
+        <img src="img/facebook.svg" alt=""  class="foot-icon">
+        <img src="img/twitter.svg" alt=""  class="foot-icon">
+        <img src="img/insta.svg" alt=""  class="foot-icon">
+      </div>
+    <div class="foot-head cmp-name">
+      DreamVilla
+      <div class="small-text">
+          Real Estate Agency
+      </div>
+    </div>
+    <div class="foot-end">
+      Copyright ©2022 All rights reserved by DreamVilla
+    </div>
+    </div>
+  <script>
+    window.addEventListener('load', ()=>{
+      document.querySelector('body').style.display = "block";
+    })
+
+  </script>
+  </body>
+</html>

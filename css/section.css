@@ -1,0 +1,146 @@
+.section-1{
+    text-align: center;
+    margin-top: 4rem;
+    transform: translateY(8rem);
+    transition: all 1s ease;
+    display: none;
+    animation: upSlide 1s ease;
+}
+
+.smallhead{
+    color:#5EA51D;
+    font-size: large;
+}
+
+.section-1 > h1{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.8);
+    width: 40rem;
+    text-align: center;
+    margin: auto;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width:600px) and (min-width:301px) {
+    .section-1{
+        transform: translateY(0);
+    }
+    .section-1 > h1{
+        font-size: 2rem;
+        width: 20rem;
+    }   
+}
+
+@media screen and (max-width:300px) {
+    .section-1 > h1{
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.house{
+    height: 6rem;
+    margin-top: 2rem;
+    margin-left: 0rem;
+}
+
+.house-container{
+    margin-left: 0.9rem;
+    width: 15rem;
+    background-color: #F3F5F1;
+    height: 13rem;
+    text-align: center;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.house-text{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    color: black !important;
+}
+
+.icon-link{
+    text-decoration: none;
+}
+
+.house-container:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: invert(1);
+    transform: scaleY(1.06);
+}
+
+.home-container{
+    transition: all 1s ease;
+    transform: translateY(4rem);
+    opacity: 0;
+}
+
+.land{
+    transition: all 1s ease;
+    transform: translateY(4rem);
+    opacity: 0;
+}
+
+.office{
+    transition: all 1s ease;
+    transform: translateY(4rem);
+    opacity: 0;
+}
+
+.factory{
+    transition: all 1s ease;
+    transform: translateY(4rem);
+    opacity: 0;
+}
+
+@media screen and (max-width:700px) and (min-width:601px) {
+    .section-1 > h1{
+        font-size: 2rem;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .icon-container{
+        margin-left: 1.5rem;
+    }
+    .house-container{
+        margin-top: 0.9rem;
+    }
+}
+
+@media screen and (max-width:699px) and (min-width:501px) {
+    .house-container{
+        margin-top: 0.9rem;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:700px) {
+    .house-container{
+        margin-top: 0.9rem;
+    }  
+}
+
+@media screen and (max-width:1270px) and (min-width:901px) {
+    .icon-container{
+        width: 60vw;
+    }
+    .house-container{
+        margin-top: 0.9rem;
+    }
+}

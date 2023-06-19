@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Villa</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/change.js" async></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/section2.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader">
+    <div class="circle"></div>
+</div>
+<article>
+  <nav class="navbar">
+    <div class="logo">Dream Villa
+      <div class="wname">Real Estate Agency</div>
+    </div>
+    <div class="nav-list-container">
+      <ul class="nav-list">
+        <li class="home"> <a href="index.html"> Home </a> </li>
+        <li> <a href="property.html"> Property</a></li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Blog</a> </li>
+        <li> <a href="#">Agents</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn" onclick="toggle()" onblur="remove()"><img src="img/list.png" alt=""></button>
+      <div class="nav-mobile-list-container">
+        <ul class="mobile-nav-list">
+          <li class="home"> <a href="index.html"> Home </a> </li>
+          <li class="property"> <a href="property.html"> Property</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li class="agent"> <a href="#">Agents</a> </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="slider owl-carousel owl-theme">
+        <div class="slide">
+        <img src="img/slide6.jpg" alt="" >
+        <div class="slider-text-container"> 
+            <h1 class="slide-header"> Your Property Is Our Priority</h1>
+            <div class="slide-text">
+            A small river named Duden flows by their place and supplies it with the 
+             necessary regelialia. It is a paradisematic country, in which roasted parts of 
+             sentences fly into your mouth.
+            </div>
+            <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="">
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Let Your Home Be Unique & Stylist</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide2.jpg" alt="">
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Modern House Make Better Life</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
+      <div class="slide">
+        <img src="img/slide7.jpg" alt="">
+        <div class="slider-text-container"> 
+          <h1 class="slide-header"> Your House Is You Paradise</h1>
+          <div class="slide-text">
+          A small river named Duden flows by their place and supplies it with the 
+           necessary regelialia. It is a paradisematic country, in which roasted parts of 
+           sentences fly into your mouth.
+          </div>
+          <a href="#">
+            <button class="slide-btn">Learn More</button>
+            </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <section>
+  <div class="section-1">
+    <div class="smallhead">
+      Our Categories
+    </div>
+    <h1>Explore Our Categories & Places
+    </h1>
+  </div>
+  <div class="icon-container">
+    <a href="#" class="icon-link">
+      <div class="house-container home-container">
+        <img src="img/house.png" alt="" class="house">
+        <div class="house-text">Residential</div>
+      </div>
+    </a>
+    <a href="#" class="icon-link">
+      <div class="house-container land">
+        <img src="img/architect.png" alt="" class="house">
+        <div class="house-text">Land</div>
+      </div>
+    </a>
+    <a href="#" class="icon-link">
+      <div class="house-container office">
+        <img src="img/office-building.png" alt="" class="house">
+        <div class="house-text">Commercial</div>
+      </div>
+    </a>
+    <a href="#" class="icon-link ">
+      <div class="house-container factory">
+        <img src="img/factory.png" alt="" class="house">
+        <div class="house-text">Industrial</div>
+      </div>
+    </a>
+</div>
+<div class="container-1">
+<div class="section-2">
+  <div class="smallhead">
+    Our Properties
+  </div>
+  <h1>Featured Properties</h1>
+</div>
+<div class="card-container">
+  <div class="card-1 c1 card1-margin">
+    <a href="#">
+    <img src="img/card1.webp" alt="" class="card-img" >
+  </a>
+    <div class="card-text-container">
+      <div class="card-header">
+      <img src="img/muhib-small-img.png" alt="" class="c1-img">
+      <div class="agent-name">
+        Muhib Mirza
+      </div>
+      <div class="up-date">
+        2 weeks ago
+      </div>
+    </div>
+    <div class="card-mid">
+    <div class="text-header">
+      Dream Villa Property
+    </div>
+    <div class="sale">
+      Sale
+    </div>
+  </div>
+      <div class="house-info">
+      <img src="img/locate.svg" alt="" class="location-logo">
+      <div class="c-text">
+        Lahore
+      </div>
+      <div class="star-box">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/greystar.svg" alt="" >
+      </div>
+      </div>
+      <div class="c-footer">
+        <a href="#">
+          <button class="buy-btn">Buy Now</button>
+        </a>
+        <div class="price">
+          10,000,000
+          <div class="unit">
+            PKR
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-1 c1">
+    <a href="#">
+    <img src="img/card2.webp" alt="" class="card-img" >
+  </a>
+    <div class="card-text-container">
+      <div class="card-header">
+      <img src="img/muhib-small-img.png" alt="" class="c1-img">
+      <div class="agent-name">
+        Muhib Mirza
+      </div>
+      <div class="up-date">
+        2 weeks ago
+      </div>
+    </div>
+    <div class="card-mid">
+      <div class="text-header">
+        Dream Villa Property
+      </div>
+      <div class="sale rent">
+        Rent
+      </div>
+    </div>
+      <div class="house-info">
+      <img src="img/locate.svg" alt="" class="location-logo">
+      <div class="c-text">
+        Lahore
+      </div>
+      <div class="star-box">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/greystar.svg" alt="">
+        <img src="img/greystar.svg" alt="">
+      </div>
+      </div>
+      <div class="c-footer">
+        <a href="#">
+          <button class="buy-btn">Buy Now</button>
+        </a>
+        <div class="price r-price">
+          50,000
+          <div class="unit">
+            PKR
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-1 c1">
+    <a href="#">
+    <img src="img/card3.webp" alt="" class="card-img" >
+  </a>
+    <div class="card-text-container">
+      <div class="card-header">
+      <img src="img/muhib-small-img.png" alt="" class="c1-img">
+      <div class="agent-name">
+        Muhib Mirza
+      </div>
+      <div class="up-date">
+        2 weeks ago
+      </div>
+    </div>
+    <div class="card-mid">
+      <div class="text-header">
+        Dream Villa Property
+      </div>
+      <div class="sale">
+        Sale
+      </div>
+    </div>
+      <div class="house-info">
+      <img src="img/locate.svg" alt="" class="location-logo">
+      <div class="c-text">
+        Lahore
+      </div>
+      <div class="star-box">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+      </div>
+      </div>
+      <div class="c-footer">
+        <a href="#">
+          <button class="buy-btn">Buy Now</button>
+        </a>
+        <div class="price">
+          20,000,000
+          <div class="unit">
+            PKR
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-1 c1">
+    <a href="#">
+    <img src="img/card4.webp" alt="" class="card-img" >
+  </a>
+    <div class="card-text-container">
+      <div class="card-header">
+      <img src="img/card1-img.png" alt="" class="c1-img">
+      <div class="agent-name">
+        Ali Hassan
+      </div>
+      <div class="up-date">
+        2 weeks ago
+      </div>
+    </div>
+    <div class="card-mid">
+      <div class="text-header">
+        Dream Villa Property
+      </div>
+      <div class="sale rent">
+        Rent
+      </div>
+    </div>
+      <div class="house-info">
+      <img src="img/locate.svg" alt="" class="location-logo">
+      <div class="c-text">
+        Lahore
+      </div>
+      <div class="star-box">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/star.svg" alt="">
+        <img src="img/greystar.svg" alt="">
+      </div>
+      </div>
+      <div class="c-footer">
+        <a href="#">
+          <button class="buy-btn">Buy Now</button>
+        </a>
+        <div class="price r-price">
+          70,000,
+          <div class="unit">
+            PKR
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <div class="foot-icon-container">
+    <img src="img/facebook.svg" alt=""  class="foot-icon">
+    <img src="img/twitter.svg" alt=""  class="foot-icon">
+    <img src="img/insta.svg" alt=""  class="foot-icon">
+  </div>
+<div class="foot-head cmp-name">
+  DreamVilla
+  <div class="small-text">
+      Real Estate Agency
+  </div>
+</div>
+<div class="foot-end">
+  Copyright ©2022 All rights reserved by DreamVilla
+</div>
+</div>
+</section>  
+</article>
+  <script>
+     $(window).on('load', ()=>{
+      $('.slider').owlCarousel({
+            items:1,
+            loop:true,
+            dots:false,
+            autoplay:true,
+            autoplayspeed:7000,
+            smartSpeed:1500,
+            autoplayHoverPause: true,
+            pullDrag:true,
+            freeDrag:true,
+            touchDrag: true,
+        });
+        $('.loader').fadeOut(500);
+        $("article").fadeIn(1000);
+     });
+  </script>
+</body>
+</html>

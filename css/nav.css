@@ -1,0 +1,243 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.2);
+    height: 5rem;
+}
+
+.logo{
+    color: white;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.wname{
+    font-size: 0.7rem;
+}
+
+.nav-list-container{
+    position: absolute;
+    top: 2rem;
+    left: 30%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list > li{
+    margin-left: 3rem;
+}
+
+.home{
+    margin-left: 0rem !important;
+}
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact{
+    display: none;
+}
+
+.nav-mobile-list-container{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    .nav-list-container{
+        display: none;
+    }
+    .navbar{
+        height: 3.5rem;
+    }
+    .nav-mobile-list-container{
+        display: block;
+        width: 30%;
+        height: 12rem;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        transition: all 0.5s ease;
+        transform: translateX(-7.5rem);
+    }
+    .mobile-nav-list{
+        list-style: none;
+        transform: translateX(-10rem);
+        transition: all 0.7s ease;
+    }
+    .mobile-nav-list > li{
+        margin-top: 0.8rem;
+        padding-left: 0.8rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 2px solid white;
+    }
+
+    .agent{
+        border: none !important;
+    }
+    .logo{
+        margin-left: 35%;
+        margin-top: 0.7rem;
+    }
+    .contact{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: block;
+    }
+    .contact > a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 0.5rem;
+        background-color: transparent;
+        border: none;
+    }
+    .btn > img{
+        filter: invert(1);
+        width: 1.4rem;
+        height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:401px) {
+    .nav-list-container{
+        display: none;
+    }
+    .navbar{
+        height: 3.6rem;
+    }
+    .nav-mobile-list-container{
+        display: block;
+        width: 30%;
+        height: 12rem;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        margin-top: 1rem;
+        transition: all 0.5s ease;
+        transform: translateX(-11rem);
+    }
+    .mobile-nav-list{
+        list-style: none;
+        transform: translateX(-10rem);
+        transition: all 0.7s ease;
+    }
+    .mobile-nav-list > li{
+        margin-top: 0.8rem;
+        padding-left: 0.8rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 2px solid white;
+    }
+    .agent{
+        border: none !important;
+    }
+    .logo{
+        margin-left: 35%;
+        margin-top: 0.7rem;
+    }
+    .contact{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: block;
+    }
+    .contact > a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 0.5rem;
+        background-color: transparent;
+        border: none;
+    }
+    .btn > img{
+        filter: invert(1);
+        width: 1.4rem;
+        height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:501px) {
+    .nav-list-container{
+        display: none;
+    }
+    .navbar{
+        height: 3.6rem;
+    }
+    .nav-mobile-list-container{
+        display: block;
+        width: 7rem;
+        height: 12rem;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        margin-top: 1rem;
+        transition: all 0.5s ease-out;
+        transform: translateX(-11rem);
+    }
+    .mobile-nav-list{
+        list-style: none;
+        transform: translateX(-10rem);
+        transition: all 0.7s ease;
+    }
+    .mobile-nav-list > li{
+        margin-top: 0.8rem;
+        padding-left: 0.8rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 2px solid white;
+    }
+    .agent{
+        border: none !important;
+    }
+    .logo{
+        margin-left: 35%;
+        margin-top: 0.7rem;
+    }
+    .contact{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: block;
+    }
+    .contact > a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 0.5rem;
+        background-color: transparent;
+        border: none;
+    }
+    .btn > img{
+        filter: invert(1);
+        width: 1.4rem;
+        height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:710px) and (min-width:601px) {
+    .nav-list > li{
+        margin-left: 2rem;
+    }
+}
